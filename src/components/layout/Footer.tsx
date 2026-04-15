@@ -73,12 +73,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ background: 'var(--emerald)', boxShadow: '0 0 0 3px rgba(16,185,129,0.2)' }}
-              >
-                <span className="font-sans font-black text-white text-lg leading-none">P</span>
-              </div>
+              <img
+                src="/ParisSmilesClinic-Logo.png"
+                alt="Paris Smiles Clinic"
+                className="w-10 h-10 rounded-xl object-cover flex-shrink-0"
+              />
               <div className="flex flex-col leading-none">
                 <span className="font-sans font-bold text-[13px] tracking-widest text-white">PARIS SMILES</span>
                 <span className="font-sans text-[9px] tracking-[0.25em] font-semibold" style={{ color: 'var(--emerald)' }}>CLINIC</span>
