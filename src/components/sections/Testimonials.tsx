@@ -48,7 +48,7 @@ export default function Testimonials() {
         className="absolute top-0 right-0 select-none pointer-events-none font-sans font-black leading-none"
         style={{
           fontSize: 'clamp(180px, 28vw, 380px)',
-          color: 'rgba(16,185,129,0.04)',
+          color: 'rgba(37,99,235,0.04)',
           userSelect: 'none',
           lineHeight: 0.75,
         }}
@@ -114,7 +114,7 @@ export default function Testimonials() {
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLElement
-                el.style.borderColor = 'rgba(16,185,129,0.4)'
+                el.style.borderColor = 'rgba(37,99,235,0.4)'
                 el.style.transform = 'translateY(-5px)'
                 el.style.boxShadow = '0 20px 60px rgba(0,0,0,0.3)'
               }}
@@ -126,7 +126,7 @@ export default function Testimonials() {
               }}
             >
               {/* Quote mark */}
-              <div className="absolute top-5 right-6 font-sans font-black text-5xl leading-none select-none" style={{ color: 'rgba(16,185,129,0.15)' }}>
+              <div className="absolute top-5 right-6 font-sans font-black text-5xl leading-none select-none" style={{ color: 'rgba(37,99,235,0.15)' }}>
                 "
               </div>
 
@@ -181,7 +181,7 @@ export default function Testimonials() {
             style={{
               background: 'var(--emerald)',
               padding: '16px 36px',
-              boxShadow: '0 8px 32px rgba(16,185,129,0.4)',
+              boxShadow: '0 8px 32px rgba(37,99,235,0.4)',
             }}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">

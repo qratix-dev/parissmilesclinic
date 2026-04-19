@@ -160,7 +160,7 @@ export default function Hero() {
       {/* Subtle emerald glow in top-right */}
       <div
         className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle at top right, rgba(16,185,129,0.12) 0%, transparent 60%)' }}
+        style={{ background: 'radial-gradient(circle at top right, rgba(37,99,235,0.12) 0%, transparent 60%)' }}
       />
 
       {/* Hero sentinel */}
@@ -203,7 +203,7 @@ export default function Hero() {
             style={{
               background: 'var(--emerald)',
               padding: '14px 28px',
-              boxShadow: '0 6px 24px rgba(16,185,129,0.45)',
+              boxShadow: '0 6px 24px rgba(37,99,235,0.45)',
             }}
           >
             {t.hero.ctaQuote}

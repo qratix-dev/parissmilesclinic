@@ -97,7 +97,7 @@ function Slider({ before, after }: { before: string; after: string }) {
           background: 'var(--navy)',
           border: '2.5px solid var(--emerald)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          boxShadow: '0 0 0 4px rgba(16,185,129,0.2), 0 4px 16px rgba(0,0,0,0.3)',
+          boxShadow: '0 0 0 4px rgba(37,99,235,0.2), 0 4px 16px rgba(0,0,0,0.3)',
         }}>
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
             <path d="M5 8H11M5 8L3 6M5 8L3 10M11 8L13 6M11 8L13 10" stroke="var(--emerald)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -107,7 +107,7 @@ function Slider({ before, after }: { before: string; after: string }) {
         {/* Vertical glow */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to bottom, transparent, rgba(16,185,129,0.5), transparent)',
+          background: 'linear-gradient(to bottom, transparent, rgba(37,99,235,0.5), transparent)',
           pointerEvents: 'none',
         }} />
       </div>
@@ -151,7 +151,7 @@ export default function BeforeAfter() {
       {/* Background decoration */}
       <div
         className="absolute right-0 top-0 w-[500px] h-[500px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle at top right, rgba(16,185,129,0.07) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle at top right, rgba(37,99,235,0.07) 0%, transparent 65%)' }}
       />
 
       <div className="relative max-w-7xl mx-auto px-6">

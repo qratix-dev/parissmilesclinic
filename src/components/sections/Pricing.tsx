@@ -45,7 +45,7 @@ export default function Pricing() {
                 style={{
                   background: currency === c ? 'var(--emerald)' : 'transparent',
                   color: currency === c ? 'white' : 'var(--muted)',
-                  boxShadow: currency === c ? '0 4px 16px rgba(16,185,129,0.35)' : 'none',
+                  boxShadow: currency === c ? '0 4px 16px rgba(37,99,235,0.35)' : 'none',
                 }}
               >
                 {currencySymbols[c]} {c}
@@ -74,7 +74,7 @@ export default function Pricing() {
                 <button
                   onClick={() => setOpenCategory(isOpen ? null : category.id)}
                   className="w-full flex items-center justify-between px-6 py-4 text-left transition-colors duration-150"
-                  style={{ background: isOpen ? 'rgba(16,185,129,0.04)' : 'transparent' }}
+                  style={{ background: isOpen ? 'rgba(37,99,235,0.04)' : 'transparent' }}
                 >
                   <div className="flex items-center gap-3">
                     {/* Emerald indicator dot */}

@@ -180,10 +180,10 @@ export default function Navbar() {
           >
             {/* Logo */}
             <img
-              src="/ParisSmilesClinic-Logo.png"
+              src="/logo parismile-01.png"
               alt="Paris Smiles Clinic"
               className="h-10 w-auto flex-shrink-0"
-              style={{ maxWidth: 120 }}
+              style={{ maxWidth: 120, filter: scrolled ? 'none' : 'brightness(0) invert(1)' }}
             />
             <div className="flex flex-col leading-none">
               <span
@@ -222,7 +222,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-sans font-semibold text-[13px] text-white transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
               style={{
                 background: 'var(--emerald)',
-                boxShadow: '0 4px 16px rgba(16,185,129,0.35)',
+                boxShadow: '0 4px 16px rgba(37,99,235,0.35)',
               }}
             >
               {t.nav.getQuote}
@@ -264,7 +264,7 @@ export default function Navbar() {
         {/* Emerald glow decoration */}
         <div
           className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full pointer-events-none"
-          style={{ background: 'radial-gradient(circle, rgba(16,185,129,0.12) 0%, transparent 70%)' }}
+          style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 70%)' }}
         />
 
         <nav className="relative flex flex-col items-center gap-6 z-10">
@@ -294,7 +294,7 @@ export default function Navbar() {
             className="mt-4 inline-flex items-center px-10 py-4 rounded-2xl font-sans font-bold text-base text-white transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
             style={{
               background: 'var(--emerald)',
-              boxShadow: '0 8px 32px rgba(16,185,129,0.4)',
+              boxShadow: '0 8px 32px rgba(37,99,235,0.4)',
             }}
           >
             {t.nav.getQuote}

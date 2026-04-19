@@ -74,10 +74,10 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
               <img
-                src="/ParisSmilesClinic-Logo.png"
+                src="/logo parismile-01.png"
                 alt="Paris Smiles Clinic"
                 className="h-11 w-auto flex-shrink-0"
-                style={{ maxWidth: 130 }}
+                style={{ maxWidth: 130, filter: 'brightness(0) invert(1)' }}
               />
               <div className="flex flex-col leading-none">
                 <span className="font-sans font-bold text-[13px] tracking-widest text-white">PARIS SMILES</span>
@@ -101,8 +101,8 @@ export default function Footer() {
                   onMouseEnter={e => {
                     const el = e.currentTarget as HTMLElement
                     el.style.color = 'var(--emerald)'
-                    el.style.borderColor = 'rgba(16,185,129,0.5)'
-                    el.style.background = 'rgba(16,185,129,0.08)'
+                    el.style.borderColor = 'rgba(37,99,235,0.5)'
+                    el.style.background = 'rgba(37,99,235,0.08)'
                   }}
                   onMouseLeave={e => {
                     const el = e.currentTarget as HTMLElement

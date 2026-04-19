@@ -43,7 +43,7 @@ export default function About() {
       {/* Background glow */}
       <div
         className="absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 70%)' }}
       />
 
       <div className="relative max-w-7xl mx-auto px-6">
@@ -127,13 +127,13 @@ export default function About() {
           <div data-animate className="grid grid-cols-2 gap-4 opacity-0">
             <div
               className="overflow-hidden aspect-[9/16] rounded-3xl"
-              style={{ border: '1px solid rgba(16,185,129,0.2)' }}
+              style={{ border: '1px solid rgba(37,99,235,0.2)' }}
             >
               <video src="/video-Dental/sort-video.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
             </div>
             <div
               className="overflow-hidden aspect-[9/16] rounded-3xl mt-10"
-              style={{ border: '1px solid rgba(16,185,129,0.2)' }}
+              style={{ border: '1px solid rgba(37,99,235,0.2)' }}
             >
               <video src="/video-Dental/sort-video-2.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
             </div>
