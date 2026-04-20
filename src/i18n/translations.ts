@@ -177,7 +177,7 @@ const en: Translations = {
     eyebrow: 'WHAT WE OFFER',
     titleEm: 'Our',
     titleRest: 'Services',
-    subtitle: 'Seven specialist treatments, one clinic — all in the heart of Antalya.',
+    subtitle: 'Six specialist treatments, one clinic — all in the heart of Antalya.',
     mostPopular: 'Most Popular',
     learnMore: 'Learn More',
     items: {
@@ -204,10 +204,6 @@ const en: Translations = {
       bone: {
         name: 'Bone Grafting',
         description: 'Regenerative bone procedures ensuring optimal support for long-lasting dental implants.',
-      },
-      zygomatic: {
-        name: 'Zygomatic Implants',
-        description: 'Specialist implants anchored in the cheekbone for patients with severe bone loss.',
       },
     },
   },
@@ -374,7 +370,7 @@ const de: Translations = {
     eyebrow: 'UNSER ANGEBOT',
     titleEm: 'Unsere',
     titleRest: 'Leistungen',
-    subtitle: 'Sieben Fachbehandlungen, eine Klinik — im Herzen von Antalya.',
+    subtitle: 'Sechs Fachbehandlungen, eine Klinik — im Herzen von Antalya.',
     mostPopular: 'Beliebteste',
     learnMore: 'Mehr erfahren',
     items: {
@@ -401,10 +397,6 @@ const de: Translations = {
       bone: {
         name: 'Knochenaufbau',
         description: 'Regenerative Knocheneingriffe für optimale Unterstützung dauerhafter Zahnimplantate.',
-      },
-      zygomatic: {
-        name: 'Zygomatische Implantate',
-        description: 'Spezialimplantate, die im Jochbein verankert werden — für Patienten mit schwerem Knochenverlust.',
       },
     },
   },
@@ -571,7 +563,7 @@ const fr: Translations = {
     eyebrow: 'CE QUE NOUS OFFRONS',
     titleEm: 'Nos',
     titleRest: 'Services',
-    subtitle: 'Sept traitements spécialisés, une clinique — au cœur d\'Antalya.',
+    subtitle: 'Six traitements spécialisés, une clinique — au cœur d\'Antalya.',
     mostPopular: 'Le plus populaire',
     learnMore: 'En savoir plus',
     items: {
@@ -598,10 +590,6 @@ const fr: Translations = {
       bone: {
         name: 'Greffe Osseuse',
         description: 'Procédures osseuses régénératives assurant un soutien optimal pour des implants dentaires durables.',
-      },
-      zygomatic: {
-        name: 'Implants Zygomatiques',
-        description: 'Implants spéciaux ancrés dans la pommette pour les patients avec une perte osseuse sévère.',
       },
     },
   },
@@ -768,7 +756,7 @@ const tr: Translations = {
     eyebrow: 'NE SUNUYORUZ',
     titleEm: 'Hizmetlerimiz',
     titleRest: '',
-    subtitle: 'Yedi uzman tedavi, tek klinik — Antalya\'nın kalbinde.',
+    subtitle: 'Altı uzman tedavi, tek klinik — Antalya\'nın kalbinde.',
     mostPopular: 'En Popüler',
     learnMore: 'Daha Fazla',
     items: {
@@ -795,10 +783,6 @@ const tr: Translations = {
       bone: {
         name: 'Kemik Grefti',
         description: 'Uzun ömürlü diş implantları için optimal destek sağlayan rejeneratif kemik prosedürleri.',
-      },
-      zygomatic: {
-        name: 'Zigomatik İmplantlar',
-        description: 'Ağır kemik kaybı olan hastalar için elmacık kemiğine sabitlenen uzman implantlar.',
       },
     },
   },

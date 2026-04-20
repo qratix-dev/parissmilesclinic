@@ -29,8 +29,8 @@ const workingHoursData = [
 const socialLinks = [
   {
     name: 'Instagram',
-    handle: '@luxurydentalturkey',
-    href: 'https://instagram.com/luxurydentalturkey',
+    handle: '@parissmilesclinic',
+    href: 'https://instagram.com/parissmilesclinic',
     color: '#E1306C',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -53,7 +53,7 @@ const socialLinks = [
   },
   {
     name: 'TikTok',
-    handle: '@luxurydentalturkey',
+    handle: '@parissmilesclinic',
     href: '#',
     color: '#000000',
     icon: (
@@ -288,8 +288,8 @@ export default function Contact() {
                 </svg>
               </div>
               <p className="font-sans font-bold text-xs uppercase tracking-widest text-[var(--muted)] mb-3">{t.contact.emailLabel}</p>
-              <a href="mailto:info@luxurydental.uk" className="font-sans text-sm text-[var(--navy)] hover:text-[var(--gold)] transition-colors duration-150 break-all">
-                info@luxurydental.uk
+              <a href="mailto:info@parissmilesclinic.com" className="font-sans text-sm text-[var(--navy)] hover:text-[var(--gold)] transition-colors duration-150 break-all">
+                info@parissmilesclinic.com
               </a>
             </div>
           </div>

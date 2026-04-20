@@ -7,10 +7,26 @@ import { useLanguage } from '../../contexts/LanguageContext'
 gsap.registerPlugin(ScrollTrigger)
 
 const doctors = [
-  { name: 'Dt. Abdullah Fida',   image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80' },
-  { name: 'Dt. Hatice Gül Dal',  image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=80' },
-  { name: 'Dt. Murat Demiral',   image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&q=80' },
-  { name: 'Dt. Nevzat Çakmak',   image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80' },
+  {
+    name: 'Dt. Abdullah Fida',
+    image: '/images/doctors/abdullah-fida.jpg',
+    fallback: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80',
+  },
+  {
+    name: 'Dt. Hatice Gül Dal',
+    image: '/images/doctors/hatice-gul-dal.jpg',
+    fallback: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=80',
+  },
+  {
+    name: 'Dt. Murat Demiral',
+    image: '/images/doctors/murat-demiral.jpg',
+    fallback: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&q=80',
+  },
+  {
+    name: 'Dt. Nevzat Çakmak',
+    image: '/images/doctors/nevzat-cakmak.jpg',
+    fallback: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80',
+  },
 ]
 
 export default function Doctors() {
@@ -80,6 +96,7 @@ export default function Doctors() {
                 alt={doctor.name}
                 className="absolute inset-0 w-full h-full object-cover filter grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-[1.04]"
                 loading="lazy"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = doctor.fallback }}
               />
               {/* Gradient */}
               <div

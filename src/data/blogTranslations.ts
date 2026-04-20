@@ -83,7 +83,7 @@ Die Implantologie in der Türkei ist reguliert und unsere Klinik arbeitet nach d
 
 ## Jetzt starten
 
-Buchen Sie eine kostenlose Online-Beratung mit Dr. Abdullah Fida oder Dr. Hatice Gül Dal. Wir überprüfen Ihre Zahnunterlagen, beantworten Ihre Fragen und erstellen einen personalisierten Behandlungsplan und ein Angebot. Kontaktieren Sie uns per WhatsApp oder per E-Mail an info@luxurydental.uk. Wir freuen uns darauf, Ihr Lächeln zu transformieren.
+Buchen Sie eine kostenlose Online-Beratung mit Dr. Abdullah Fida oder Dr. Hatice Gül Dal. Wir überprüfen Ihre Zahnunterlagen, beantworten Ihre Fragen und erstellen einen personalisierten Behandlungsplan und ein Angebot. Kontaktieren Sie uns per WhatsApp oder per E-Mail an info@parissmilesclinic.com. Wir freuen uns darauf, Ihr Lächeln zu transformieren.
       `.trim(),
     },
     'veneers-vs-crowns': {
@@ -375,7 +375,7 @@ L'implantologie en Turquie est réglementée et notre clinique fonctionne selon 
 
 ## Comment commencer
 
-Réservez une consultation en ligne gratuite avec le Dr. Abdullah Fida ou le Dr. Hatice Gül Dal. Nous examinerons vos antécédents dentaires, répondrons à vos questions et fournirons un plan de traitement personnalisé. Contactez-nous sur WhatsApp ou par email à info@luxurydental.uk.
+Réservez une consultation en ligne gratuite avec le Dr. Abdullah Fida ou le Dr. Hatice Gül Dal. Nous examinerons vos antécédents dentaires, répondrons à vos questions et fournirons un plan de traitement personnalisé. Contactez-nous sur WhatsApp ou par email à info@parissmilesclinic.com.
       `.trim(),
     },
     'veneers-vs-crowns': {
@@ -659,7 +659,7 @@ Türkiye'deki implantoloji düzenlemeye tabidir ve kliniğimiz Avrupa'daki premi
 
 ## Başlamak İçin
 
-Dr. Abdullah Fida veya Dr. Hatice Gül Dal ile ücretsiz çevrimiçi konsültasyon rezervasyonu yapın. Diş kayıtlarınızı inceleyecek, sorularınızı yanıtlayacak ve kişiselleştirilmiş bir tedavi planı ve fiyat teklifi sunacağız. WhatsApp veya info@luxurydental.uk adresinden bize ulaşın.
+Dr. Abdullah Fida veya Dr. Hatice Gül Dal ile ücretsiz çevrimiçi konsültasyon rezervasyonu yapın. Diş kayıtlarınızı inceleyecek, sorularınızı yanıtlayacak ve kişiselleştirilmiş bir tedavi planı ve fiyat teklifi sunacağız. WhatsApp veya info@parissmilesclinic.com adresinden bize ulaşın.
       `.trim(),
     },
     'veneers-vs-crowns': {

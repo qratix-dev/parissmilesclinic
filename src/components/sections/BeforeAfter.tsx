@@ -1,26 +1,38 @@
 import { useState, useRef, useCallback, useEffect } from 'react'
 import SectionLabel from '../ui/SectionLabel'
 import { useLanguage } from '../../contexts/LanguageContext'
+import before1Img from '../../data/beforeAfter/before1.png'
+import after1Img  from '../../data/beforeAfter/after1.png'
+import before2Img from '../../data/beforeAfter/before2.png'
+import after2Img  from '../../data/beforeAfter/after2.png'
+import before3Img from '../../data/beforeAfter/before3.png'
+import after3Img  from '../../data/beforeAfter/after3.png'
 
 const pairs = [
   {
     id: 1,
-    before: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80',
-    after:  'https://images.unsplash.com/photo-1559589689-577aabd1db4f?w=800&q=80',
+    before: before1Img,
+    after:  after1Img,
+    fallbackBefore: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80',
+    fallbackAfter:  'https://images.unsplash.com/photo-1559589689-577aabd1db4f?w=800&q=80',
   },
   {
     id: 2,
-    before: 'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=800&q=80',
-    after:  'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80',
+    before: before2Img,
+    after:  after2Img,
+    fallbackBefore: 'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=800&q=80',
+    fallbackAfter:  'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80',
   },
   {
     id: 3,
-    before: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=800&q=80',
-    after:  'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=800&q=80',
+    before: before3Img,
+    after:  after3Img,
+    fallbackBefore: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=800&q=80',
+    fallbackAfter:  'https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=800&q=80',
   },
 ]
 
-function Slider({ before, after }: { before: string; after: string }) {
+function Slider({ before, after, fallbackBefore, fallbackAfter }: { before: string; after: string; fallbackBefore: string; fallbackAfter: string }) {
   const [pct, setPct] = useState(50)
   const boxRef = useRef<HTMLDivElement>(null)
   const dragging = useRef(false)
@@ -62,20 +74,29 @@ function Slider({ before, after }: { before: string; after: string }) {
         src={after}
         alt="After"
         draggable={false}
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', pointerEvents: 'none' }}
+        onError={(e) => { (e.currentTarget as HTMLImageElement).src = fallbackAfter }}
+        style={{
+          position: 'absolute', inset: 0,
+          width: '100%', height: '100%',
+          objectFit: 'cover', objectPosition: 'center',
+          pointerEvents: 'none',
+        }}
       />
 
-      {/* BEFORE — clipped */}
-      <div
-        style={{ position: 'absolute', inset: 0, width: `${pct}%`, overflow: 'hidden', pointerEvents: 'none' }}
-      >
-        <img
-          src={before}
-          alt="Before"
-          draggable={false}
-          style={{ position: 'absolute', inset: 0, width: boxRef.current?.offsetWidth ?? 600, height: '100%', maxWidth: 'none', objectFit: 'cover' }}
-        />
-      </div>
+      {/* BEFORE — same full size, clipped via clip-path (no distortion) */}
+      <img
+        src={before}
+        alt="Before"
+        draggable={false}
+        onError={(e) => { (e.currentTarget as HTMLImageElement).src = fallbackBefore }}
+        style={{
+          position: 'absolute', inset: 0,
+          width: '100%', height: '100%',
+          objectFit: 'cover', objectPosition: 'center',
+          clipPath: `inset(0 ${100 - pct}% 0 0)`,
+          pointerEvents: 'none',
+        }}
+      />
 
       {/* Divider */}
       <div
@@ -174,7 +195,7 @@ export default function BeforeAfter() {
             const treatment = t.beforeAfter.treatments[i]
             return (
               <div key={pair.id}>
-                <Slider before={pair.before} after={pair.after} />
+                <Slider before={pair.before} after={pair.after} fallbackBefore={pair.fallbackBefore} fallbackAfter={pair.fallbackAfter} />
                 <div className="mt-5 text-center">
                   <p className="font-sans font-bold text-white text-sm tracking-tight">{treatment?.name}</p>
                   <p className="font-sans text-xs mt-1" style={{ color: 'var(--emerald)' }}>

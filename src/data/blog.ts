@@ -96,7 +96,7 @@ Dental implantology in Turkey is regulated and our clinic operates to the same s
 
 ## Getting Started
 
-Book a free online consultation with Dr. Abdullah Fida or Dr. Hatice Gül Dal. We'll review your dental records, answer your questions, and provide a personalised treatment plan and quote. Contact us on WhatsApp or by email at info@luxurydental.uk. We look forward to transforming your smile.
+Book a free online consultation with Dr. Abdullah Fida or Dr. Hatice Gül Dal. We'll review your dental records, answer your questions, and provide a personalised treatment plan and quote. Contact us on WhatsApp or by email at info@parissmilesclinic.com. We look forward to transforming your smile.
     `.trim(),
   },
   {

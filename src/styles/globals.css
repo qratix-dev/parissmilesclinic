@@ -14,9 +14,11 @@
     --gold:         #2563EB;
     --gold-light:   #60A5FA;
     /* Surfaces */
-    --bg:           #F2F4F7;
+    --bg:           #F0F4FF;
     --surface:      #FFFFFF;
-    --surface-2:    #F8FAFB;
+    --surface-2:    #F5F8FF;
+    --blue-tint:    #EBF2FF;
+    --navy-glass:   rgba(26,50,100,0.06);
     /* Text */
     --text:         #0A1628;
     --text-muted:   #64748B;
@@ -25,10 +27,10 @@
     --border:       #E2E8F0;
     --border-light: rgba(226,232,240,0.6);
     /* Shadows */
-    --shadow-xs:    0 1px 3px rgba(10,22,40,0.06);
-    --shadow-card:  0 4px 16px rgba(10,22,40,0.07), 0 1px 4px rgba(10,22,40,0.05);
-    --shadow-hover: 0 12px 40px rgba(37,99,235,0.18), 0 4px 12px rgba(26,50,100,0.1);
-    --shadow-lg:    0 24px 64px rgba(10,22,40,0.14);
+    --shadow-xs:    0 1px 3px rgba(26,50,100,0.06);
+    --shadow-card:  0 2px 8px rgba(26,50,100,0.07), 0 8px 24px rgba(26,50,100,0.06);
+    --shadow-hover: 0 8px 32px rgba(37,99,235,0.22), 0 2px 8px rgba(26,50,100,0.1);
+    --shadow-lg:    0 24px 64px rgba(26,50,100,0.14), 0 8px 24px rgba(26,50,100,0.08);
     /* Radius */
     --radius-sm:    10px;
     --radius-md:    16px;

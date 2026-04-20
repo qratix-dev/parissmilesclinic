@@ -157,8 +157,8 @@ export default function Navbar() {
     <>
       <nav
         style={{
-          backdropFilter: 'blur(20px)',
-          WebkitBackdropFilter: 'blur(20px)',
+          backdropFilter: 'blur(24px)',
+          WebkitBackdropFilter: 'blur(24px)',
           background: scrolled
             ? 'rgba(255,255,255,0.88)'
             : 'rgba(10,22,40,0.25)',
@@ -170,7 +170,7 @@ export default function Navbar() {
         }}
         className="fixed top-0 left-0 right-0 z-40"
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 lg:h-[72px]">
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 lg:h-[80px]">
 
           {/* Logo */}
           <Link
@@ -180,10 +180,15 @@ export default function Navbar() {
           >
             {/* Logo */}
             <img
-              src="/logo parismile-01.png"
+              src="/logo parismile blue-01.png"
               alt="Paris Smiles Clinic"
-              className="h-14 w-auto flex-shrink-0"
-              style={{ maxWidth: 200, filter: scrolled ? 'none' : 'brightness(0) invert(1)' }}
+              className="h-14 lg:h-[68px] w-auto flex-shrink-0"
+              style={{
+                maxWidth: 260,
+                filter: scrolled
+                  ? 'none'
+                  : 'brightness(0) invert(1) drop-shadow(0 2px 16px rgba(0,0,0,0.65))',
+              }}
             />
           </Link>
 
