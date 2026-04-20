@@ -42,15 +42,14 @@ export default function ServiceDetail() {
 
   if (!service || !detail) return <Navigate to="/" replace />
 
-  const serviceName = t.services.items[
-    id === 'implantation' ? 'implants'
+  const serviceKey = id === 'implantation' ? 'implants'
     : id === 'dental-veneer' ? 'veneers'
     : id === 'dental-crown' ? 'crowns'
     : id === 'teeth-whitening' ? 'whitening'
     : id === 'sinus-lifting' ? 'sinus'
     : id === 'bone-grafting' ? 'bone'
-    : id
-  ]?.name ?? service.name
+    : (id ?? '')
+  const serviceName = (t.services.items[serviceKey as keyof typeof t.services.items] as { name: string } | undefined)?.name ?? service.name
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
