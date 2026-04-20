@@ -104,7 +104,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" style={{ backgroundColor: '#FBF6E8' }}>
+    <section id="contact" className="overflow-hidden" style={{ backgroundColor: '#FBF6E8' }}>
 
       {/* ── BLOCK 1: Leave a Message Form ── */}
       <div className="py-20 lg:py-28">

@@ -11,7 +11,7 @@ export default function Pricing() {
   const { t } = useLanguage()
 
   return (
-    <section id="pricing" className="py-24 lg:py-32" style={{ background: 'var(--bg)' }}>
+    <section id="pricing" className="py-24 lg:py-32 overflow-hidden" style={{ background: 'var(--bg)' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <SectionLabel>{t.pricing.label}</SectionLabel>

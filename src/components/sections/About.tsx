@@ -17,9 +17,35 @@ const partners = [
   'Osstem Implant', 'Ivoclar Vivadent', 'Dentsply',
 ]
 
+function useVideoAutoplay(ref: React.RefObject<HTMLVideoElement | null>) {
+  useEffect(() => {
+    const video = ref.current
+    if (!video) return
+    const tryPlay = () => {
+      video.muted = true
+      video.play().catch(() => {
+        // On first user touch, retry (iOS low-power mode)
+        const resume = () => { video.play().catch(() => {}); document.removeEventListener('touchstart', resume) }
+        document.addEventListener('touchstart', resume, { once: true })
+      })
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) tryPlay(); else video.pause() },
+      { threshold: 0.25 }
+    )
+    observer.observe(video)
+    return () => observer.disconnect()
+  }, [ref])
+}
+
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null)
+  const video1Ref = useRef<HTMLVideoElement>(null)
+  const video2Ref = useRef<HTMLVideoElement>(null)
   const { t } = useLanguage()
+
+  useVideoAutoplay(video1Ref)
+  useVideoAutoplay(video2Ref)
 
   useEffect(() => {
     if (!sectionRef.current) return
@@ -129,7 +155,7 @@ export default function About() {
               className="overflow-hidden aspect-[9/16] rounded-3xl"
               style={{ border: '1px solid rgba(37,99,235,0.2)' }}
             >
-              <video autoPlay muted loop playsInline preload="metadata" className="w-full h-full object-cover">
+              <video ref={video1Ref} muted loop playsInline preload="metadata" className="w-full h-full object-cover">
                 <source src="/video-Dental/sort-video.mp4" type="video/mp4" />
               </video>
             </div>
@@ -137,7 +163,7 @@ export default function About() {
               className="overflow-hidden aspect-[9/16] rounded-3xl sm:mt-10"
               style={{ border: '1px solid rgba(37,99,235,0.2)' }}
             >
-              <video autoPlay muted loop playsInline preload="metadata" className="w-full h-full object-cover">
+              <video ref={video2Ref} muted loop playsInline preload="metadata" className="w-full h-full object-cover">
                 <source src="/video-Dental/sort-video-2.mp4" type="video/mp4" />
               </video>
             </div>

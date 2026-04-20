@@ -187,7 +187,7 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="py-24 lg:py-32" style={{ background: 'var(--bg)' }} ref={sectionRef}>
+    <section id="services" className="py-24 lg:py-32 overflow-hidden" style={{ background: 'var(--bg)' }} ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">

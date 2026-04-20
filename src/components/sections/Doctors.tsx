@@ -49,7 +49,7 @@ export default function Doctors() {
   }, [])
 
   return (
-    <section id="doctors" className="py-24 lg:py-32" style={{ background: 'var(--bg)' }} ref={sectionRef}>
+    <section id="doctors" className="py-24 lg:py-32 overflow-hidden" style={{ background: 'var(--bg)' }} ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <SectionLabel>{t.doctors.label}</SectionLabel>
