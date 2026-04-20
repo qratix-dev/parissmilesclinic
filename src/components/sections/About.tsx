@@ -124,18 +124,22 @@ export default function About() {
           </div>
 
           {/* Right: Videos */}
-          <div data-animate className="grid grid-cols-2 gap-4 opacity-0">
+          <div data-animate className="grid grid-cols-1 sm:grid-cols-2 gap-4 opacity-0">
             <div
               className="overflow-hidden aspect-[9/16] rounded-3xl"
               style={{ border: '1px solid rgba(37,99,235,0.2)' }}
             >
-              <video src="/video-Dental/sort-video.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+              <video autoPlay muted loop playsInline preload="metadata" className="w-full h-full object-cover">
+                <source src="/video-Dental/sort-video.mp4" type="video/mp4" />
+              </video>
             </div>
             <div
-              className="overflow-hidden aspect-[9/16] rounded-3xl mt-10"
+              className="overflow-hidden aspect-[9/16] rounded-3xl sm:mt-10"
               style={{ border: '1px solid rgba(37,99,235,0.2)' }}
             >
-              <video src="/video-Dental/sort-video-2.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+              <video autoPlay muted loop playsInline preload="metadata" className="w-full h-full object-cover">
+                <source src="/video-Dental/sort-video-2.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>

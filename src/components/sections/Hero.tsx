@@ -167,7 +167,7 @@ export default function Hero() {
       <div id="hero-sentinel" className="absolute bottom-0 left-0 right-0 h-1 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pb-28 w-full" ref={contentRef}>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pb-16 sm:pb-28 w-full" ref={contentRef}>
 
         {/* Eyebrow */}
         <div data-hero className="flex items-center gap-3 mb-6 opacity-0">
@@ -237,19 +237,19 @@ export default function Hero() {
           borderTop: '1px solid rgba(255,255,255,0.08)',
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-14">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex flex-row flex-wrap items-center justify-center gap-4 sm:gap-10">
           {[
             { value: t.hero.statPatients, label: t.hero.statPatientsLabel },
             { value: t.hero.statExperience, label: t.hero.statExperienceLabel },
             { value: t.hero.statSatisfaction, label: t.hero.statSatisfactionLabel },
           ].map((s, i, arr) => (
             <div key={i} className="flex items-center gap-3">
-              <span className="font-sans font-black text-2xl" style={{ color: 'var(--emerald)', letterSpacing: '-0.04em' }}>
+              <span className="font-sans font-black text-xl sm:text-2xl" style={{ color: 'var(--emerald)', letterSpacing: '-0.04em' }}>
                 {s.value}
               </span>
-              <span className="font-sans text-sm text-white/55 font-medium">{s.label}</span>
+              <span className="font-sans text-xs sm:text-sm text-white/55 font-medium">{s.label}</span>
               {i < arr.length - 1 && (
-                <span className="hidden sm:block w-px h-5 ml-2" style={{ background: 'rgba(255,255,255,0.12)' }} />
+                <span className="w-px h-4 ml-1" style={{ background: 'rgba(255,255,255,0.12)' }} />
               )}
             </div>
           ))}
