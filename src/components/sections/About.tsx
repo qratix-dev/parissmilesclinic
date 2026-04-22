@@ -65,7 +65,7 @@ export default function About() {
   }, [])
 
   return (
-    <section id="about" className="py-24 lg:py-32 overflow-hidden" style={{ background: 'var(--navy)' }} ref={sectionRef}>
+    <section id="about" className="relative py-24 lg:py-32 overflow-hidden" style={{ background: 'var(--navy)' }} ref={sectionRef}>
       {/* Background glow */}
       <div
         className="absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] pointer-events-none"
@@ -165,6 +165,8 @@ export default function About() {
             >
               <video ref={video2Ref} muted loop playsInline preload="metadata" className="w-full h-full object-cover">
                 <source src="/video-Dental/sort-video-2.mp4" type="video/mp4" />
+                {/* fallback if sort-video-2 codec unsupported on device */}
+                <source src="/video-Dental/sort-video.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
